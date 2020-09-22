@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:background="@drawable/back1">
+
+    <EditText
+        android:id="@+id/etEng"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:hint="영어"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etKor"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEng"
+        android:layout_marginLeft="15dp"
+        android:hint="한글"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="40dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_toRightOf="@+id/etEng"
+        android:text="입력" />
+
+    <ListView
+        android:id="@+id/lvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/btnAdd"
+        android:background="#98E6E6FA"
+        />
+
+</RelativeLayout>
