@@ -24,12 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnEdit.setOnClickListener(this);
         btnQuiz.setOnClickListener(this);
         btnExit.setOnClickListener(this);
-
-        Storage.vocaArr.add(new Voca("water", "물"));
-        Storage.vocaArr.add(new Voca("bag", "가방"));
-        Storage.vocaArr.add(new Voca("hand", "손"));
-        Storage.vocaArr.add(new Voca("cat", "고양이"));
-        Storage.vocaArr.add(new Voca("roof", "지붕"));
     }
 
     @Override

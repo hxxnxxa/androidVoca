@@ -16,6 +16,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class EditActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+
     EditText etEng;
     EditText etKor;
     Button btnAdd;
@@ -25,9 +26,10 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
 
     boolean isEdit;
 
-    //ArrayList 객체와 ListView 객체를 연결하기 위해 ArrayAdapter 객체를 사용한다.
     ArrayList<String> arr = new ArrayList<>();
+
     ArrayAdapter adapter;
+    //ArrayList객체를 ListView에 띄우기 위해 ArrayAdapter 선언
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -39,20 +41,24 @@ public class EditActivity extends AppCompatActivity implements View.OnClickListe
         btnAdd = findViewById(R.id.btnAdd);
         lvContent = findViewById(R.id.lvContent);
 
-        //ArrayList 객체를 ArrayAdapter 객체에 연결한다.
-        //this : EditActivity
-        //android.R.layout.simple_list_1 : 한 줄에 하나의 텍스트 아이템만 보여주는 레이아웃 파일
-        //한 줄에 보여지는 아이템 갯수나 구성을 변경하려면 여기에 새로 만든 레이아웃을 지정하면 된다.
-        //this : 데이터가 저장되어 있는 ArrayList 객체
-        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arr);
+        Storage.vocaArr.add(new Voca("incense", "격분시키다"));
+        Storage.vocaArr.add(new Voca("inundate", "범람하다"));
+        Storage.vocaArr.add(new Voca("jeopardy", "위험"));
+        Storage.vocaArr.add(new Voca("magnify", "확대하다"));
+        Storage.vocaArr.add(new Voca("municipal", "시의"));
 
-        //ListView객체에 adapter 객체 연결
+        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arr);
+        //adapter객체에 ArrayList 연결
+        //android.R.layout.simple_list_item_1 : 한 줄에 하나의 아이템(Voca객체)만 보여주는 레이아웃 파일
+        //여기서의 this는 데이터가 저장되어있는 ArrayList 객체
+
         lvContent.setAdapter(adapter);
+        //ListView에 adapter객체 연결
 
         btnAdd.setOnClickListener(this);
 
-        //ListView 객체의 특정 아이템 클릭 시 이벤트 발생 처리
         lvContent.setOnItemClickListener(this);
+        //ListView 객체의 특정 아이템 클릭 시 이벤트 발생 처리(수정기능 동작)
     }
 
     private void show() {
