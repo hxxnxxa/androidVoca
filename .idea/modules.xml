@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VocaEx01.iml" filepath="$PROJECT_DIR$/.idea/modules/VocaEx01.iml" group="VocaEx01" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="VocaEx01/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/VocaEx01.iml" filepath="$PROJECT_DIR$/.idea/modules/VocaEx01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/VocaEx01.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/VocaEx01.app.iml" />
     </modules>
   </component>
 </project>
