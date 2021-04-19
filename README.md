@@ -4,7 +4,7 @@
 > + Android Studio 4.1.2</br>
 > + MacBook Pro (Retina, 13-inch, Early 2015) Big Sur 11.2</br>
 
-</br></br>
+</br>
 
 > 소스코드 설명
 > + Voca.java (생성자 부분, 객체 초기화를 통해 사용할 준비하기)
