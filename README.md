@@ -48,22 +48,6 @@
 >       //ListView에 adapter객체 연결
 >}
 >```
->```
-> /* Voca객체에 데이터 추가하는 부분 */
-> 
-> private void show() {
->        arr.clear();
->        //arr객체가 표시될 때 중복을 피하기 위해 clear시켜주기
->        
->        for (int i = 0; i <Storage.vocaArr.size() ; i++) {
->            Voca  v = Storage.vocaArr.get(i);
->            arr.add(v.eng + " : " + v.kor);
->        }
->  
->        adapter.notifyDataSetChanged();
->        //adapter객체에 변경 내용을 반영시켜주기
->}
-> ```
 
 </br>
 
