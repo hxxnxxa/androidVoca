@@ -5,30 +5,68 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@drawable/back1">
+    android:background="@color/white">
 
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_width="150dp"
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="단어장 편집"
-        android:layout_marginTop="300dp"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/btnQuiz"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:text="단어장 퀴즈"
-        android:layout_below="@+id/btnEdit"
-        android:layout_centerHorizontal="true"/>
-
-    <Button
-        android:id="@+id/btnExit"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnQuiz"
+        android:text="MY VOCA"
+        android:textSize="40dp"
         android:layout_centerHorizontal="true"
-        android:text="종료" />
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/indianred" />
 
+    <ImageView
+        android:id="@+id/ivMain"
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/back2" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivMain"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="단어장 보기"
+            android:background="@color/indianred"/>
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="편집"
+            android:layout_toRightOf="@+id/btnList"
+            android:layout_marginLeft="5dp"
+            android:background="@color/indianred"/>
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="퀴즈"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/btnEdit"
+            android:background="@color/indianred"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="종료"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btnQuiz"
+            android:layout_below="@+id/btnEdit"
+            android:background="@color/indianred"/>
+
+    </RelativeLayout>
 </RelativeLayout>

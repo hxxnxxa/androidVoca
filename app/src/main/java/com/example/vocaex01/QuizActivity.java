@@ -88,7 +88,7 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
 
             btnSwap.setOnClickListener(this);
             btnSubmit.setOnClickListener(this);
-            findViewById(R.id.btnAct).setOnClickListener(this);
+            //findViewById(R.id.btnAct).setOnClickListener(this);
 
             time = 10;
             tvTime.setText(String.valueOf(time));
@@ -232,10 +232,12 @@ public class QuizActivity extends AppCompatActivity implements View.OnClickListe
                 }
             });
             builder.create().show();
-        } else if(view.getId()==R.id.btnAct) {
+        }
+        /* else if(view.getId()==R.id.btnAct) {
             Intent intent = new Intent(this, com.example.vocaex01.OptionActivity2.class);
             intent.putExtra("isEng", isEng);
             startActivityForResult(intent, 1000);
-        }
+            }
+         */
     }
 }

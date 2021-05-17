@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditActivity"
-    android:background="@drawable/back1">
+    android:background="@color/indianred">
 
     <EditText
         android:id="@+id/etEng"
@@ -33,8 +33,11 @@
         android:layout_marginLeft="40dp"
         android:layout_marginTop="10dp"
         android:layout_marginRight="15dp"
+        android:background="@color/lightgrey"
         android:layout_toRightOf="@+id/etEng"
-        android:text="입력" />
+        android:layout_marginBottom="10dp"
+        android:text="추가"
+        android:textColor="@color/black"/>
 
     <ListView
         android:id="@+id/lvContent"
