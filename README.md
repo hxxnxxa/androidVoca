@@ -11,3 +11,9 @@
 
 > + handler를 이용한 splash screen, Quiz의 Timer 구현
 > + Storage 객체를 별도로 선언하여 프로그램이 종료되어도 데이터는 그대로 저장 유지
+
+</br>
+
+<h4>이슈사항</h4>
+
+> + ListView가 자동으로 나타나지 않고 추가 버튼을 입력해야 나옴
