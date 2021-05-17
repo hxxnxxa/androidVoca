@@ -1,4 +1,4 @@
-<h1>MY VOCA</h1>
+<h1>androidVoca</h1>
 
 <h4>🌝 &nbsp미리보기</h4>
 
